@@ -1,0 +1,412 @@
+body {
+    position: absolute;
+    width: 100%;
+    height: 500%;
+    background-color: cornsilk;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.topNav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    border: 1px solid black;
+    margin: 0%;
+    align-items: center;
+    margin-left: 0%;
+    margin-right: 0%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    border-radius: 0%;
+    width: 100%;
+    height: 100%;
+}
+
+
+                        /* Buttons for Nav */
+#edu {
+    height: 100%;
+    width: 25%;
+    background-attachment: scroll;
+    border-color: black;
+    background-color: black;
+    border-width: 5px;
+    background-image: url(/images/education.jpg);
+    background-size: 1000px 1000px;
+    font-size: 80%;
+    
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#employ {
+    height: 100%;
+    width: 25%;
+    background-attachment: scroll;
+    border-color: black;
+    background-color: black;
+    border-width: 5px;
+    background-image: url(/images/cosl.jpg);
+    background-size: 1000px 1000px;
+    font-size: 30%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#interest {
+    height: 100%;
+    width: 25%;
+    background-attachment: scroll;
+    border-color: black;
+    background-color: black;
+    border-width: 5px;
+    background-image: url(/images/bury.jpg);
+    background-size: 700px 1000px;
+    font-size: 30%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#cont {
+    height: 100%;
+    width: 25%;
+    background-attachment: scroll;
+    border-color: black;
+    background-color: black;
+    background-image: url(/images/phone.png);
+    background-size: 600px 1000px;
+    border-width: 5px;
+    font-size: 30%;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+#topheader {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 20%;
+    font-size: 400%;
+    text-align: center;
+    margin-top: 0;
+    margin-left: 0%;
+}
+
+/* Key Frames */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounceInLeft {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    0% {
+        opacity: 0;
+        transform: translate3d(-3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(-10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(5px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes bounceInRight {
+
+    from,
+    60%,
+    75%,
+    90%,
+    to {
+        animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    from {
+        opacity: 0;
+        transform: translate3d(3000px, 0, 0);
+    }
+    60% {
+        opacity: 1;
+        transform: translate3d(-25px, 0, 0);
+    }
+    75% {
+        transform: translate3d(10px, 0, 0);
+    }
+    90% {
+        transform: translate3d(-5px, 0, 0);
+    }
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+                        /* Animations */
+#aEd1 {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    background-color: skyblue;
+}
+
+#aEd2 {
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
+    animation-delay: 0s
+}
+
+#aEd3 {
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
+    animation-delay: 0.1s
+}
+
+#aEd4 {
+    animation-name: bounceInLeft;
+    animation-duration: 3s;
+    animation-delay: 0.2s
+}
+
+#aEmp1 {
+    animation-name: fadeIn;
+    animation-duration: 3s;
+    animation-delay: 0s;
+    text-align: right;
+}
+
+#aEmp2 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.05s;
+    text-align: right;
+    text-decoration-line: underline;
+    margin-top: -1%;
+}
+
+#aEmp3 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.1s;
+    text-align: right;
+
+}
+
+#aEmp4 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.15s;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+#aEmp5 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.2s;
+    text-align: right;
+}
+
+#aEmp6 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.25s;
+    text-align: right;
+    text-decoration-line: underline;
+}
+
+#aEmp7 {
+    animation-name: bounceInRight;
+    animation-duration: 3s;
+    animation-delay: 0.3s;
+    text-align: right;
+}
+
+
+#aHob1 {
+    animation-name: fadeIn;
+    animation-duration: 4s;
+    animation-delay: 0s;
+}
+
+#aHob2 {
+    animation-name: bounceInLeft;
+    animation-duration: 4s;
+    animation-delay: 0.1s;
+}
+
+#aHob3 {
+    animation-name: bounceInLeft;
+    animation-duration: 4s;
+    animation-delay: 0.15s;
+}
+
+#aHob4 {
+    animation-name: bounceInLeft;
+    animation-duration: 4s;
+    animation-delay: 0.2s;
+}
+
+                        /* Containers below nav */
+
+.education {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: skyblue;
+    height: 20%;
+    font-size: 200%;
+    z-index: 0;
+}
+
+.employment {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    color: black;
+    background-color: rgb(255, 198, 99);
+    flex-direction: column;
+    height: 20%;
+    font-size: 150%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    z-index: 1;
+}
+
+h3 {
+    font-size: 300%;
+    text-align: left;
+    margin-top: 0%;
+    background-color: skyblue;
+}
+
+h5 {
+    font-size: 300%;
+    text-align: right;
+    margin-top: 0%;
+}
+
+.eddy {
+    background-color: skyblue;
+}
+
+.hobbies {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    color: black;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: skyblue;
+    height: 20%;
+    font-size: 200%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 2;
+}
+
+.contact {
+    display: flex;
+    align-content: left;
+    justify-content: left;
+    color: black;
+    background-color: rgb(255, 198, 99);
+    flex-direction: column;
+    height: 20%;
+    font-size: 200%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+                        /* Home Buttons */
+
+#bttLeft {
+    height: 100px;
+    width: 100px;
+    background-attachment: scroll;
+    background-image: url(/images/home.png);
+    display: flex;
+    background-color: skyblue;
+    border-color: skyblue;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 60%;
+    margin-top: 45%;
+    border-radius: 40%;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+#bttRight {
+
+    height: 100px;
+    width: 100px;
+    background-attachment: scroll;
+    background-image: url(/images/home.png);
+    position: absolute;
+    display: flex;
+    background-color: rgb(255, 198, 99);
+    border-color: rgb(255, 198, 99);
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 1%;
+    margin-top: 43%;
+    border-radius: 40%;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+#bttLeftOne {
+    height: 100px;
+    width: 100px;
+    background-attachment: scroll;
+    background-image: url(/images/home.png);
+    display: flex;
+    background-color: skyblue;
+    border-color: skyblue;
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 72%;
+    margin-top: 45%;
+    border-radius: 40%;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
+
+#bttRightOne {
+    height: 100px;
+    width: 100px;
+    background-attachment: scroll;
+    background-image: url(/images/home.png);
+    position: absolute;
+    display: flex;
+    background-color: rgb(255, 198, 99);
+    border-color: rgb(255, 198, 99);
+    justify-content: center;
+    align-items: flex-end;
+    margin-left: 1%;
+    margin-top: 43%;
+    border-radius: 40%;
+    background-size: 100px 100px;
+    background-repeat: no-repeat;
+}
